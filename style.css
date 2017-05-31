@@ -38,7 +38,7 @@ h1, h2 {
   background-color: #0066CC;
 }
 #photo {
-  width: 150px;
+  width: 400px;
 }
 #project-list {
   display: flex;                  /* Flex box */
