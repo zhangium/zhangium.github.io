@@ -1,5 +1,27 @@
+#header {
+  position: fixed;
+
+}
+
+.navigation {
+  overflow: hidden;
+  background-color: rgb(199, 173, 223);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  color: black;
+}
+
 #content {
+  width: 600px;
   margin: 120px auto;
+  margin-top: 100px;
 }
 
 h1 {
@@ -25,14 +47,7 @@ h1, h2 {
   color: #0066CC;
 }
 
-#line {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 4px;
-  background-color: #0066CC;
-}
+
 #photo {
   width: 400px;
 }
@@ -45,10 +60,13 @@ h1, h2 {
 
 .project {
   flex: 0 0 140px;                /* No grow/shrink, 140px width */
-  height: 140px;
   margin-bottom: 10px;
   background-color: #7AA3CC;
   transition: 0.2s background-color;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project:hover {
   background-color: #0066CC;
