@@ -1,42 +1,88 @@
-<html>
-  <head>
-    <title> Portfolio Website </title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-  </head>
-  <body>
-      <nav class="navigation">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Resume</a>
-      </nav>
-    <section id="content">
-      <img id="photo" src="img/photo.jpg" />
-      <h1> Annie Zhang </h1>
-      <div class="subtext">
-       Waterloo SYDE 2021
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="description" content="Annie Zhang — personal website">
+  <title>Annie Zhang — Personal website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Annie Zhang, home">AZ<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#resume">Resume</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, I’M ANNIE</p>
+        <h1>Curious by nature.<br><em>Builder</em> by design.</h1>
+        <p class="intro">I’m a systems-minded engineer who enjoys making thoughtful, useful things. This is a home for my work, ideas, and whatever I’m learning along the way.</p>
+        <a class="button" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
       </div>
-      <h2>
-        About
-      </h2>
-      <div>
-        Hi, I'm studying systems design engineering at the University of Waterloo.
+      <div class="hero-art" role="img" aria-label="Abstract shapes in warm colors">
+        <span class="shape shape-one"></span><span class="shape shape-two"></span><span class="shape shape-three"></span>
+        <span class="art-note">ideas<br>in progress<span>.</span></span>
       </div>
-      <h2>
-        Projects
-      </h2>
-      <div class="project-list">
-        <div class="project">
-          <p>Coming soon...</p>
-        </div>
-        <div class="project">
-          <p>Coming soon...</p>
-        </div>
-        <div class="project">
-          <p>Coming soon...</p>
+    </section>
+
+    <section class="section wrap" id="about">
+      <p class="section-label"><span>01</span> ABOUT</p>
+      <div class="section-body">
+        <h2>Making sense<br>of complex things.</h2>
+        <div class="prose">
+          <p>I like bringing people, design, and technology together to solve real problems. I’m always learning, asking questions, and looking for a clearer way forward.</p>
+          <p class="placeholder">Replace this with a few details about what you care about, what you do, and what you’re looking for.</p>
         </div>
       </div>
     </section>
-  </body>
+
+    <section class="section wrap" id="work">
+      <p class="section-label"><span>02</span> SELECTED WORK</p>
+      <div class="section-body work-body">
+        <div class="work-heading"><h2>Things I’ve<br>made<span>.</span></h2><p>A few projects, experiments, and ideas.<br>Details coming soon.</p></div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-art art-peach"><span class="art-index">01</span><span class="abstract-circle"></span><span class="abstract-square"></span></div>
+            <p class="project-meta">PROJECT / YEAR</p><h3>Project title</h3><p class="project-desc">A short description of the problem and what you made.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-lilac"><span class="art-index">02</span><span class="orbit"></span><span class="orbit-dot"></span></div>
+            <p class="project-meta">PROJECT / YEAR</p><h3>Another project</h3><p class="project-desc">Add a sentence about your role, process, or result.</p>
+          </article>
+          <article class="project-card">
+            <div class="project-art art-green"><span class="art-index">03</span><span class="sparkle">✳</span><span class="sparkle small">✳</span></div>
+            <p class="project-meta">EXPERIMENT / YEAR</p><h3>A small experiment</h3><p class="project-desc">Use this space for a personal project or something you’re exploring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="resume">
+      <p class="section-label"><span>03</span> RESUME</p>
+      <div class="resume-card">
+        <div><h2>Want the full story?</h2><p>Add your resume PDF to the repository as <code>resume.pdf</code>.</p></div>
+        <a class="button button-dark" href="resume.pdf">View resume <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <a class="wordmark" href="#home">AZ<span>.</span></a>
+    <p>Thanks for stopping by.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/your-linkedin-username/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <a href="https://github.com/zhangium" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </div>
+  </footer>
+</body>
 </html>
