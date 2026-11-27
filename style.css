@@ -38,10 +38,8 @@ nav a:hover, .social-links a:hover { color: var(--orange); }
 .section-body { display: grid; grid-template-columns: 1fr 1fr; gap: 10%; padding: 28px 0 0 14%; }
 .section h2 { margin: 0; font-size: clamp(29px, 3.8vw, 42px); font-weight: 500; letter-spacing: -1.6px; line-height: 1.15; }
 .prose p:first-child { margin-top: 0; }
-.prose .placeholder { color: #92968e; font-size: 12px; }
 .work-body { display: block; }
 .work-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 27px; }
-.work-heading p { color: var(--muted); font-size: 12px; line-height: 1.8; }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .project-card { min-width: 0; }
 .project-art { height: 170px; position: relative; display: grid; place-items: center; overflow: hidden; }
@@ -59,7 +57,6 @@ nav a:hover, .social-links a:hover { color: var(--orange); }
 .resume-card { margin: 25px 0 0 14%; padding: 24px 26px; background: #efefe8; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
 .resume-card h2 { font-size: 21px; letter-spacing: -.5px; }
 .resume-card p { margin: 8px 0 0; color: var(--muted); font-size: 12px; }
-.resume-card code { padding: 2px 4px; background: #fffefa; font-size: 11px; }
 .footer { min-height: 85px; display: flex; align-items: center; justify-content: space-between; gap: 18px; border-top: 1px solid var(--line); }
 .footer > p { color: var(--muted); font-size: 11px; }
 :focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
@@ -76,8 +73,7 @@ nav a:hover, .social-links a:hover { color: var(--orange); }
   .site-header { height: 66px; padding-inline: 7vw; }nav { gap: 16px; }nav a { font-size: 11px; }
   .wrap { width: 86vw; }.hero { padding-top: 54px; }.hero-art { height: 245px; }
   .project-grid { grid-template-columns: 1fr; gap: 24px; }.project-art { height: 190px; }
-  .work-heading { display: block; }.work-heading p { margin-top: 12px; }
-  .resume-card { align-items: flex-start; flex-direction: column; padding: 21px; }
+  .work-heading { display: block; }  .resume-card { align-items: flex-start; flex-direction: column; padding: 21px; }
   .footer { gap: 10px; }.footer > p { order: 3; }.social-links { gap: 14px; }.social-links a { font-size: 11px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
